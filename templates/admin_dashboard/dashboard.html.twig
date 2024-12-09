@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tableau de bord Admin{% endblock %}
+
+{% block body %}
+    <div class="container mt-5 text-center">
+        <h1>Tableau de bord Admin</h1>
+
+        <div class="mt-4">
+            <a href="{{ path('app_register_admin') }}" class="btn btn-primary btn-lg">Ajouter un Admin</a>
+        </div>
+
+        <div class="mt-4">
+            <a href="{{ path('app_user_index') }}" class="btn btn-info btn-lg">Gérer les Utilisateurs</a>
+        </div>
+
+        <div class="mt-4">
+            <a href="{{ path('app_product_index') }}" class="btn btn-success btn-lg">Gérer les Produits</a>
+        </div>
+    </div>
+{% endblock %}

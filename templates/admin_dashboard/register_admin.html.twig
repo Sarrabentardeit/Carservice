@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Enregistrement d'un Administrateur{% endblock %}
+
+{% block body %}
+    <h1>Créer un Compte Administrateur</h1>
+
+    {{ form_start(registrationForm) }}
+    {{ form_widget(registrationForm) }}
+    <button class="btn btn-primary">Créer Administrateur</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}

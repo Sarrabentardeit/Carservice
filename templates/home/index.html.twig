@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div class="container mt-5 text-center">
+        <h1>Bienvenue sur votre espace client</h1>
+
+        <div class="mt-4">
+            <a href="{{ path('app_appointment_new') }}" class="btn btn-primary btn-lg">Prendre un rendez-vous</a>
+        </div>
+
+        <div class="mt-4">
+            <a href="{{ path('app_vehicle_new') }}" class="btn btn-success btn-lg">Enregistrer un véhicule</a>
+        </div>
+
+        <div class="mt-4">
+            <a href="{{ path('app_user_show', {'id': app.user.id}) }}" class="btn btn-info btn-lg">Espace Client</a>
+        </div>
+    </div>
+{% endblock %}
